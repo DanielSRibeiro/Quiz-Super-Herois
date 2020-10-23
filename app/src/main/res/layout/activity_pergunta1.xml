@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pergunta1Activity"
+    android:background="@drawable/marveldc_cinema">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuário: "
+            android:textColor="@color/colorwhite"/>
+        <TextView
+            android:id="@+id/textViewAnonimo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anônimo"
+            android:textColor="@color/colorwhite"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20sp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0sp"
+            android:gravity="center"
+            android:text="Qual foi o filme de Super-Heroi que mais rendeu bilheteria da História(até 2020)?"
+            android:textColor="@color/colorwhite"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Spider-Man (2002)"
+                android:textColor="@color/colorwhite" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Batman: O Cavaleiro das Trevas (2008)"
+                android:textColor="@color/colorwhite" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Demolidor - O Homem sem Medo (2003)"
+                android:textColor="@color/colorwhite" />
+
+            <RadioButton
+                android:id="@+id/radioButtonVingadoresP1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vingadores: Ultimato (2019)"
+                android:textColor="@color/colorwhite"
+                android:textColorHighlight="@color/colorwhite" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:text="Confirmar"
+            android:id="@+id/buttonAvancarP1"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
